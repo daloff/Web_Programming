@@ -1,0 +1,137 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	background: url(p.jpg);
+	background-size: cover;
+}
+
+.neon{
+	position:absolute;
+	left:50%;
+	top:10%;
+	transform: translate(-50%, -50%);
+	margin:0;
+	padding:0 20px;
+	font-size:6em;
+	color:#fff;
+	text-shadow: 0 0 20px #33FFE2;
+}
+
+.neon:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #33FFE2;
+	
+}
+
+.grid-container {	
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-gap: 1px;
+	padding: 20px;
+	justify-content: center;
+}
+
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.flip-card {
+	background-image: url("l.jpg");
+	width: 200px;
+	height: 200px;
+	perspective: 1000px;
+}
+
+
+.flip-card-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(-180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background-color: #1E90FF	;
+	color: black;
+}
+
+.flip-card-back {
+	background-color: #2980b9;
+	color: white;
+	transform: rotateY(-180deg);
+}
+
+.image{
+	width: 200px;
+	height: 200px;
+}
+
+.lol{
+	position:absolute;
+	left:50%;
+	top:110%;
+	transform: translate(-50%, -50%);
+	margin:0;
+	padding:0 20px;
+	font-size:3em;
+	color:#fff;
+	text-shadow: 0 0 20px #33FFE2;
+}
+
+.tit{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 50px;
+}
+
+.tri{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 27px;
+	
+}
+
+.tor{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 15px;
+}
+
+.tor{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 15px;
+}
+
+.tt{
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.ti{
+	font-size: 30px;
+	margin-top: 70px;
+}
+.tot{
+	font-size: 28px;
+	margin-top: 5px;
+	font-style: italic;
+}
