@@ -1,0 +1,76 @@
+  <!DOCTYPE html>
+
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Assignment 4</title>
+
+      <style type="text/css">
+        body {
+          font-family: sans-serif;
+          background-color: #c6e2ff;
+          line-height: 1.5em;
+        }
+
+        .container {
+          text-align: center;
+        }
+
+        table {
+          border-collapse: collapse;
+          margin: 0px auto;
+        }
+
+        tr {
+          margin: 0px;
+          padding: 0px;
+        }
+
+        tr td {
+          margin: 0px;
+          padding: 4px;
+          border: 2px solid black;
+        }
+
+        table tr td img {
+          width: 120px;
+          height: 120px;
+        }
+      </style>
+
+      <script src="partC.js"></script>
+
+    </head>
+    <body>
+      <div class="container">
+        <h1>Part C - Matching Game</h1>
+        <hr />
+   <a href="index.html">Part A</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="partB.html">Part B</a> &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="partC.html">Part C</a><br /> 
+      <hr />
+    </center>
+
+        <div id="instructions">
+          <div>Click on the pictures to match each pair. You'll have to wait if you get it wrong. Find all the pairs to win!</div>
+          <div>
+            <label id="picLabel" for="picSelect">Number of pictures:</label>
+            <select id="picSelect" name="picSelect">
+              <option value="8" selected>8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+            </select><br/>
+            <label id="secsLabel" for="secsSelect">Memorization time:</label>
+            <select id="secsSelect" name="secsSelect">
+              <option value="3" selected>3 seconds</option>
+              <option value="5">5 seconds</option>
+              <option value="8">8 seconds</option>
+            </select><br/>
+            <button id="startButton" onclick="start()">Start The Game!</button>
+          </div>
+        </div>
+        <div id="timerText"></div>
+        <table id="matchTable"></table>
+      </div>
+    </body>
+  </html>
